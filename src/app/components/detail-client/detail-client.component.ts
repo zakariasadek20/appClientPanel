@@ -21,7 +21,7 @@ export class DetailClientComponent implements OnInit {
     phone:'',
     balance:0
    } 
-   
+   showBalance :boolean=false;
   constructor(
    private clientService: ClientService,
    private route: ActivatedRoute,
