@@ -1,0 +1,30 @@
+<div class="row mt-3">
+  <div class="col-md-8 mx-auto">
+      <div class="card">
+          
+          <div class="card-body">
+              <h1 class="text-center">
+                <span class="text-primary">
+                <i class="fa fa-lock" aria-hidden="true"> </i> Login Panel
+              </span>Client
+          </h1>    
+          
+          <form (ngSubmit)="onLogin()">
+              <div class="form-group mt-3">
+                  <label for="">Email :</label>
+                  <input type="text" class="form-control" name="email" [(ngModel)]="email" >
+              </div>
+              <div class="form-group mt-3">
+                  <label for="">Password :</label>
+                  <input type="password" class="form-control" name="password" [(ngModel)]="password" >
+              </div>
+
+              <input type="submit" value="Login" class="btn btn-primary btn-block">
+              <button type="button" class="btn btn-danger btn-block" (click)="loginWithGoogle()" >
+                  <i class="fa fa-google-plus" aria-hidden="true">Google account</i>
+              </button>
+          </form>      
+      </div>
+  </div>
+</div>
+</div>
